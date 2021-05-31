@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách điện thoại</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./../../css/global.css" />
+    <link rel="stylesheet" href="./../../css/template.css" />
+    <link rel="stylesheet" href="./../../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="flex space-between vertical-center">
+            <div class="header-top-left flex vertical-center">
+              <a href="./../../index.html" class="heading-4">Holmes</a>
+              <div class="header-search">
+                <input type="text" class="header-search-input" />
+                <button class="header-search-button">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+            <a href="./../cart.html" class="button heading-2 position-relative">
+              <i class="fas fa-cart-plus header-actions-icon"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <nav class="header-nav">
+            <ul class="header-nav-list flex">
+              <li class="header-nav-item">
+                <a href="./smart-phone.html">Điện thoại</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="./laptop.html">Laptop</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="./watch.html">Đồng hồ</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="./tablet.html">Tablet</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="./../not-found.html">Phụ kiện</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-3" id="products"></div>
+
+    <script type="text/javascript">
+      function productsTemplate(product) {
+        return `
+          <div class="product-item animation-hover">
+            <div class="product-image">
+              <img
+                src="./../../images/products/watch/${product.image}"
+                alt="${product.name}"
+              />
+              <button class="product-button">Thêm vào giỏ</button>
+            </div>
+            <div className="product-content">
+              <p>
+                <a href="./pages/cart.html"class="product-name">
+                  ${product.name}
+                </a>
+              </p>
+              <strong class="product-price">
+                ${product.price.toLocaleString("it-IT", {
+                  style: "currency",
+                  currency: "VND",
+                })}
+              </strong>
+            </div>
+          </div>
+        `;
+      }
+
+      fetch("./../../js/database.json")
+        .then((response) => response.json())
+        .then((database) => {
+          console.log(database.smartPhones);
+
+          document.querySelector("#products").innerHTML = `
+            <div class="product-list">
+              ${database.products.watches
+                .filter((product, index) => index >= 0 && index <= 9)
+                .map(productsTemplate)
+                .join("")}
+            </div>
+          `;
+        });
+    </script>
+  </body>
+</html>

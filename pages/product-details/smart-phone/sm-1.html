@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi Tiết Sản Phẩm</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./../../../css/global.css" />
+    <link rel="stylesheet" href="./../../../css/style.css" />
+    <link rel="stylesheet" href="./../../../css/product-detail.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="flex space-between vertical-center">
+            <div class="flex vertical-center">
+              <a href="./../../../index.html" class="heading-4">Holmes</a>
+              <div class="header-search">
+                <input type="text" class="header-search-input" />
+                <button class="header-search-button">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="heading-2 position-relative header-shopping-cart">
+              <i class="fas fa-cart-plus header-actions-icon"></i>
+              <span class="cart-count">0</span>
+              <div class="cart-dropdown">
+                <div class="cart-items"></div>
+                <div class="cart-summary"></div>
+                <div class="cart-dropdown-buttons">
+                  <button onclick="deleteAllProduct();" class="cart-dropdown-button">
+                    Xoá Hết
+                  </button>
+                  <a href="./../../cart.html" class="cart-dropdown-button"> Xem Giỏ hàng </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <nav class="header-nav">
+            <ul class="header-nav-list flex">
+              <li class="header-nav-item">
+                <a href="./../../products/smart-phone.html">Điện thoại</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="./../../products/laptop.html">Laptop</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="./../../products/watch.html">Đồng hồ</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="./../../products/tablet.html">Tablet</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="./../../not-found.html">Phụ kiện</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="product-wrapper">
+        <div class="image-display">
+          <div class="image-showcase">
+            <img src="./../../../images/products/smart-phone/sm-1.jpg" alt="sm-1.jpg" />
+            <img src="./../../../images/products/smart-phone/sm-2.jpg" alt="sm-2.jpg" />
+            <img src="./../../../images/products/smart-phone/sm-3.jpg" alt="sm-3.jpg" />
+            <img src="./../../../images/products/smart-phone/sm-4.jpg" alt="sm-4.jpg" />
+          </div>
+          <div class="image-select">
+            <div class="image-item" data-id="1">
+              <img src="./../../../images/products/smart-phone/sm-1.jpg" alt="sm-1.jpg" />
+            </div>
+            <div class="image-item" data-id="2">
+              <img src="./../../../images/products/smart-phone/sm-2.jpg" alt="sm-2.jpg" />
+            </div>
+            <div class="image-item" data-id="3">
+              <img src="./../../../images/products/smart-phone/sm-3.jpg" alt="sm-3.jpg" />
+            </div>
+            <div class="image-item" data-id="4">
+              <img src="./../../../images/products/smart-phone/sm-4.jpg" alt="sm-4.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="product-content">
+          <h2 class="product-title">Samsung Galaxy S21 5G</h2>
+          <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span class="review-count">(Xem 397 đánh giá)</span>
+          </div>
+          <div class="product-price">
+            <h2>
+              <span class="new-price">200.000 VND</span>
+              <span class="old-price">250.000 VND</span>
+            </h2>
+          </div>
+          <div class="purchase-info">
+            <div class="purchase-count">
+              <p class="label">Số Lượng:</p>
+              <div class="group-input">
+                <button class="button-minus" onclick="changeQuantityValue(event, -1)">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="text" class="quantity-input" value="1" min="1" />
+                <button class="button-plus" onclick="changeQuantityValue(event, 1)">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <button class="button-addToCart" onclick="purchaseProduct(event)">Thêm vào giỏ</button>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="heading-text">Sản Phẩm Liên Quan</h3>
+      <div class="product-carousel">
+        <div class="product-slider"></div>
+
+        <div class="product-actions">
+          <button class="carousel-button"><</button>
+          <button class="carousel-button">></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../../../js/script.js"></script>
+    <script type="text/javascript">
+      (function ImageShowCase(params) {
+        let imageId = 1;
+        [...document.querySelectorAll('.image-item')].forEach(function (imageItem) {
+          imageItem.addEventListener('click', function (event) {
+            event.preventDefault();
+            imageId = imageItem.dataset.id;
+            showImage();
+          });
+        });
+
+        function showImage() {
+          const displayWidth = document.querySelector(
+            '.image-showcase img:first-child',
+          ).clientWidth;
+          document.querySelector('.image-showcase').style.transform = `
+            translateX(${-(imageId - 1) * displayWidth}px)
+          `;
+        }
+      })();
+
+      (function ProductSlider(params) {
+        const slides = [...document.querySelectorAll('.product-slide')];
+        const buttonPrev = document.querySelector('.carousel-button:nth-child(1)');
+        const buttonNext = document.querySelector('.carousel-button:nth-child(2)');
+        let currentSlide = 1;
+        buttonPrev.disabled = true;
+
+        buttonPrev.addEventListener('click', function (event) {
+          buttonPrev.disabled = currentSlide === 2 ? true : false;
+          buttonNext.disabled = false;
+          currentSlide--;
+          showSlide();
+        });
+
+        buttonNext.addEventListener('click', function (event) {
+          buttonPrev.disabled = false;
+          buttonNext.disabled = currentSlide === 2 ? true : false;
+          currentSlide++;
+          showSlide();
+        });
+
+        function showSlide() {
+          const sliderWidth = document.querySelector('.product-slider').clientWidth;
+          document.querySelector('.product-slider').style.transform = `
+          translateX(${-(currentSlide - 1) * (sliderWidth / 3)}px)
+        `;
+        }
+      })();
+
+      document.addEventListener('DOMContentLoaded', function () {
+        loadJSON();
+        loadCart();
+      });
+
+      function loadJSON() {
+        fetch('./../../../js/database.json')
+          .then((response) => response.json())
+          .then((database) => {
+            (function renderProductSlider() {
+              const productSlideElement = [...document.querySelectorAll('.product-slide')];
+              const smartPhones = database.products.smartPhones;
+
+              for (let i = 0; i < 3; i++) {
+                const productSlideElement = document.createElement('div');
+                productSlideElement.classList.add('product-slide');
+
+                for (let j = 0; j < 4; j++) {
+                  const randomValue = getRandomNumber(0, smartPhones.length - 1);
+                  const smartPhone = smartPhones[randomValue];
+
+                  const productSlideItemElement = document.createElement('div');
+                  productSlideItemElement.classList.add('product-slide-item');
+                  productSlideItemElement.innerHTML = `
+                    <div class="product-slide-image">
+                      <img src="./../../../images/products/smart-phone/${smartPhone.image}" alt="${smartPhone.image}" />
+                    </div>
+                    <div class="product-slide-content">
+                      <a href="./../../../pages/product-details/smart-phone/sm-1.html">
+                        <h4 class="product-slide-title">${smartPhone.name}</h4>
+                      </a>
+                      <div class="product-slide-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="review-count">(Xem 397 đánh giá)</span>
+                      </div>
+                      <p class="product-slide-price">
+                        4.790.000 VND
+                        <span class="percent">-27 %</span>
+                      </p>
+                      <span class="original">6.490.000 VND</span>
+                    </div>
+                  `;
+
+                  productSlideElement.appendChild(productSlideItemElement);
+                }
+
+                document.querySelector('.product-slider').appendChild(productSlideElement);
+              }
+            })();
+          });
+      }
+
+      function getRandomNumber(minValue, maxValue) {
+        return Math.trunc(Math.random() * (maxValue - minValue) + minValue);
+      }
+    </script>
+  </body>
+</html>

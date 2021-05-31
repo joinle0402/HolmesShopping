@@ -1,0 +1,439 @@
+{
+  "categories": [
+    {
+      "image": "dien-thoai.png",
+      "name": "Điện thoại",
+      "page": "smart-phone.html"
+    },
+    {
+      "image": "laptop.png",
+      "name": "Laptop",
+      "page": "laptop.html"
+    },
+    {
+      "image": "apple.png",
+      "name": "Apple",
+      "page": "not-found.html"
+    },
+    {
+      "image": "tablet.png",
+      "name": "Tablet",
+      "page": "tablet.html"
+    },
+    {
+      "image": "dong-ho.png",
+      "name": "Đồng hồ",
+      "page": "watch.html"
+    },
+    {
+      "image": "xiaomi.png",
+      "name": "Xiaomi",
+      "page": "not-found.html"
+    },
+    {
+      "image": "may-cu.png",
+      "name": "Máy cũ",
+      "page": "not-found.html"
+    },
+    {
+      "image": "man-hinh.png",
+      "name": "Màn hình",
+      "page": "not-found.html"
+    },
+    {
+      "image": "thu-cu-doi-moi.png",
+      "name": "Thu cũ đổi mới",
+      "page": "not-found.html"
+    },
+    {
+      "image": "kinh-cuong-luc.png",
+      "name": "Kính cường lực",
+      "page": "not-found.html"
+    },
+    {
+      "image": "may-tinh.png",
+      "name": "Máy tính",
+      "page": "not-found.html"
+    },
+    {
+      "image": "may-in.png",
+      "name": "Máy in",
+      "page": "not-found.html"
+    }
+  ],
+  "products": {
+    "smartPhones": [
+      {
+        "image": "sm-1.jpg",
+        "name": "Samsung Galaxy S21 5G",
+        "price": 20990000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-2.jpg",
+        "name": "iPhone 12 64GB",
+        "price": 21290000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-3.jpg",
+        "name": "Xiaomi Redmi Note 10 (6GB/128GB)",
+        "price": 5090000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-4.jpg",
+        "name": "OPPO A93",
+        "price": 5990000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-5.jpg",
+        "name": "Samsung Galaxy A02",
+        "price": 2370000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-6.jpg",
+        "name": "OPPO Reno5",
+        "price": 8690000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-7.jpg",
+        "name": "iPhone 12 Pro Max 128GB",
+        "price": 30990000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-8.jpg",
+        "name": "Vivo Y51",
+        "price": 5790000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-9.jpg",
+        "name": "Realme C20",
+        "price": 2490000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-10.jpg",
+        "name": "Galaxy A52 8GB/256GB",
+        "price": 9590000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-11.jpg",
+        "name": "Samsung Galaxy Z Fold2 5G",
+        "price": 50000000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-12.jpg",
+        "name": "Samsung Galaxy Z Fold2 5G Đặc Biệt",
+        "price": 41490000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-13.jpg",
+        "name": "iPhone 12 Pro Max 512GB",
+        "price": 38240000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-14.jpg",
+        "name": "iPhone 12 Pro 512GB",
+        "price": 36490000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-15.jpg",
+        "name": "iPhone 12 Pro Max 256GB",
+        "price": 35190000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-16.jpg",
+        "name": "Samsung Galaxy S21 Ultra 5G 256GB",
+        "price": 33990000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-17.jpg",
+        "name": "iPhone 12 Pro 256GB",
+        "price": 30990000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-18.jpg",
+        "name": "Samsung Galaxy S21 Ultra 5G 128GB",
+        "price": 30990000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-19.jpg",
+        "name": "Samsung Galaxy Note 20 Ultra",
+        "price": 29990000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      },
+      {
+        "image": "sm-20.jpg",
+        "name": "Samsung Galaxy S21+ 5G 256GB",
+        "price": 28990000,
+        "category": "smart-phone",
+        "link": "sm-1.html"
+      }
+    ],
+    "laptops": [
+      {
+        "image": "l1.jpg",
+        "name": "HP 340s G7 i3 1005G1 (240Q4PA)",
+        "price": 12390000
+      },
+      {
+        "image": "l2.jpg",
+        "name": "Lenovo IdeaPad 3 15IIL05 i3 1005G1 (81WE0132VN)",
+        "price": 11790000
+      },
+      {
+        "image": "l3.jpg",
+        "name": "Lenovo ThinkBook 15IIL i3 1005G1/4GB/512GB/Win10 (20SM00D9VN)",
+        "price": 12990000
+      },
+      {
+        "image": "l4.jpg",
+        "name": "Acer Aspire 7 A715 42G R4ST R5 5500U/8GB/256GB/4GB GTX1650/Win10 (NH.QAYSV.004)",
+        "price": 19990000
+      },
+      {
+        "image": "l5.jpg",
+        "name": "Acer Nitro 5 AN515 45 R3SM R5 5600H/8GB/512GB/4GB GTX1650/144Hz/Balo/Win10 (NH.QBMSV.005)",
+        "price": 22490000
+      },
+      {
+        "image": "l6.jpg",
+        "name": "Lenovo IdeaPad S145 15IIL i3 1005G1/4GB/256GB/Win10 (81W8001XVN)",
+        "price": 10290000
+      },
+      {
+        "image": "l7.jpg",
+        "name": "HP 15s du1108TU i3 10110U/4GB/256GB/Win10 (2Z6L7PA)",
+        "price": 12290000
+      },
+      {
+        "image": "l8.jpg",
+        "name": "HP Pavilion 15 eg0007TU i3 1115G4/4GB/256GB/Office H&S2019//Win10 (2D9K4PA)",
+        "price": 14190000
+      },
+      {
+        "image": "l9.jpg",
+        "name": "Lenovo ThinkBook 14s G2 ITL i5 1135G7/8GB/512GB/Win10 (20VA000NVN)",
+        "price": 19990000
+      },
+      {
+        "image": "l10.jpg",
+        "name": "Acer Aspire 7 A715 75G 52S5 i5 9300H/8GB/512GB/4GB GTX1650Ti/Balo/Win10 (NH.Q85SV.002)",
+        "price": 20990000
+      },
+      {
+        "image": "l11.jpg",
+        "name": "Lenovo ThinkBook 14 G2 ITL i7 1165G7/8GB/512GB/Win10 (20VD003LVN)",
+        "price": 21990000
+      },
+      {
+        "image": "l12.jpg",
+        "name": "Acer Aspire 3 A314 35 P6JF N6000/4GB/512GB/Win10 (NX.A7SSV.003)",
+        "price": 9590000
+      },
+      {
+        "image": "l13.jpg",
+        "name": "Acer Aspire A315 56 34AY i3 1005G1/4GB/512GB/Win10 (NX.HS5SV.007)",
+        "price": 12990000
+      },
+      {
+        "image": "l14.jpg",
+        "name": "Lenovo ThinkBook 14s G2 ITL i7 1165G7/8GB/512GB/Win10 (20VA000MVN)",
+        "price": 23990000
+      },
+      {
+        "image": "l15.jpg",
+        "name": "MSI GF63 10SC i5 10300H 8GB/512GB/4GB GTX1650/144Hz/Win10 (255VN)",
+        "price": 20990000
+      }
+    ],
+    "tablets": [
+      {
+        "image": "t1.jpg",
+        "name": "Samsung Galaxy Tab S7",
+        "price": 18990000
+      },
+      {
+        "image": "t2.jpg",
+        "name": "Huawei MatePad T10s (Nền tảng Huawei Mobile Service)",
+        "price": 5140000
+      },
+      {
+        "image": "t3.jpg",
+        "name": "Samsung Galaxy Tab A7",
+        "price": 7990000
+      },
+      {
+        "image": "t4.jpg",
+        "name": "Lenovo Tab M10 - FHD Plus",
+        "price": 5190000
+      },
+      {
+        "image": "t5.jpg",
+        "name": "iPad Air 4 Wifi 64GB",
+        "price": 16190000
+      },
+      {
+        "image": "t6.jpg",
+        "name": "Huawei MatePad 64GB (Nền tảng Huawei Mobile Service)",
+        "price": 6590000
+      },
+      {
+        "image": "t7.jpg",
+        "name": "Lenovo Tab M10 - Gen 2",
+        "price": 4290000
+      },
+      {
+        "image": "t8.jpg",
+        "name": "iPad Pro 12.9 inch Wifi Cellular 128GB",
+        "price": 31190000
+      },
+      {
+        "image": "t9.jpg",
+        "name": "iPad Pro 12.9 inch Wifi 128GB",
+        "price": 27190000
+      },
+      {
+        "image": "t10.jpg",
+        "name": "iPad Pro 11 inch Wifi Cellular 128GB",
+        "price": 25190000
+      },
+      {
+        "image": "t11.jpg",
+        "name": "iPad Air 4 Wifi Cellular 256GB",
+        "price": 24190000
+      },
+      {
+        "image": "t12.jpg",
+        "name": "iPad Pro M1 11 inch WiFi 128GB",
+        "price": 21990000
+      },
+      {
+        "image": "t13.jpg",
+        "name": "iPad Pro 11 inch Wifi 128GB",
+        "price": 21190000
+      },
+      {
+        "image": "t14.jpg",
+        "name": "iPad Air 4 Wifi 256GB",
+        "price": 20690000
+      },
+      {
+        "image": "t15.jpg",
+        "name": "iPad Air 4 Wifi Cellular 64GB",
+        "price": 20190000
+      }
+    ],
+    "watches": [
+      {
+        "image": "w1.jpg",
+        "name": "Đồng hồ định vị trẻ em 4G Kidcare S8 Đen",
+        "price": 2290000
+      },
+      {
+        "image": "w2.jpg",
+        "name": "Đồng hồ định vị trẻ em 4G Kidcare S6 Hồng",
+        "price": 1790000
+      },
+      {
+        "image": "w3.jpg",
+        "name": "Samsung Galaxy Watch 3 LTE 41mm viền thép dây da",
+        "price": 6490000
+      },
+      {
+        "image": "w4.jpg",
+        "name": "Apple Watch S6 LTE 40mm viền nhôm dây cao su xanh",
+        "price": 12792000
+      },
+      {
+        "image": "w5.jpg",
+        "name": "Vòng đeo tay thông minh Mi Band 6",
+        "price": 1290000
+      },
+      {
+        "image": "w6.jpg",
+        "name": "Samsung Galaxy Watch 3 41mm viền thép hồng dây da",
+        "price": 5990000
+      },
+      {
+        "image": "w7.jpg",
+        "name": "Huawei Watch GT2 Pro 46mm dây da",
+        "price": 4290000
+      },
+      {
+        "image": "w8.jpg",
+        "name": "Samsung Galaxy Watch 3 LTE 41mm viền thép dây da",
+        "price": 6490000
+      },
+      {
+        "image": "w9.jpg",
+        "name": "Apple Watch S6 LTE 40mm viền nhôm dây cao su xanh",
+        "price": 1943000
+      },
+      {
+        "image": "w10.jpg",
+        "name": "Huami Amazfit GTS vàng",
+        "price": 1943000
+      },
+      {
+        "image": "w11.jpg",
+        "name": "Đồng hồ định vị trẻ em Kidcare 08S",
+        "price": 1112000
+      },
+      {
+        "image": "w12.jpg",
+        "name": "Apple Watch S6 40mm viền nhôm dây cao su hồng",
+        "price": 10392000
+      },
+      {
+        "image": "w13.jpg",
+        "name": "Garmin Lily dây silicone trắng",
+        "price": 4491000
+      },
+      {
+        "image": "w14.jpg",
+        "name": "Garmin Lily dây silicone tím",
+        "price": 4491000
+      },
+      {
+        "image": "w15.jpg",
+        "name": "Apple Watch S6 40mm viền nhôm dây cao su (Product RED)",
+        "price": 10392000
+      }
+    ]
+  }
+}
